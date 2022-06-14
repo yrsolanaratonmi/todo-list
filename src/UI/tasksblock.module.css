@@ -1,0 +1,26 @@
+.main {
+    padding: 30px;
+}
+.main li{
+    font-size: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.color {
+    background-color: #282c34;
+}
+.pad {
+    margin-left: 100px;
+    transform:scale(3.0);
+}
+
+.aboba {
+    background-color: #282c34;
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+
+
