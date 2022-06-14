@@ -8,19 +8,18 @@ let StyleForInput = `${styles.aboba} + "form-control"`
 
 let TasksBlock = (props) => {
 
-
-    let CurrentTasks = props.info.dispatch(props.info.tasksGiver())
+    props.info.tasksInfo = props.info.tasksInfo
+        .filter(element => !(element.isDeleting))
+    let CurrentTasks = props.info.tasksInfo
 
     let AllTasks = CurrentTasks
-        .filter(element => !(element.isDeleting))
         .map(el => <li className={myStyle}>{el.text}
-            <button onClick={()=>{
-                console.log(CurrentTasks)
+            <button className="btn btn-outline-secondary" onClick={()=>{
                 el.isDeleting = true
                 console.log(el.text)
                 console.log(el.isDeleting)
                 props.info.rerender(props.render)
-            }}>delete
+            }}>Удалить
             </button>
         </li>)
 

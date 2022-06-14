@@ -1,5 +1,5 @@
 let info = {
-    tasksInfo: [{text:'gavno',isDeleting :false}, {text:'mocha',isDeleting :false}],
+    tasksInfo: [],
     tasksGiver() {
         return {type: 'get-tasks'}
     },
