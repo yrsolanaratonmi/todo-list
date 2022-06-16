@@ -32,10 +32,13 @@ let TasksBlock = (props) => {
     let func = () => {
         let n = a.current.value
         props.info.dispatch(props.info.tasksSetter(n, false))
+        cleartext()
         props.info.rerender(props.render)
 
     }
-
+    let cleartext = () => {
+        document.getElementById('xd').value = ''
+}
 
     return (
         <div className={inputGroup}>
@@ -43,7 +46,7 @@ let TasksBlock = (props) => {
                 {AllTasks}
             </ul>
             <div className={inputGroup} >
-                <input ref={a} className={StyleForInput} placeholder="Введите задачу" aria-label = "Recipient's username" aria-describedby = "basic-addon2"></input>
+                <input ref={a} className={StyleForInput} id='xd' placeholder="Введите задачу" aria-label = "Recipient's username" aria-describedby = "basic-addon2"></input>
                 <div className='input-group-append'>
                     <button className="btn btn-outline-secondary btn-lg" type="button" onClick={func}>Создать задачу</button>
                 </div>
