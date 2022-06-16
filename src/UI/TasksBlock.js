@@ -39,12 +39,8 @@ let TasksBlock = (props) => {
     let cleartext = () => {
         document.getElementById('xd').value = ''
 }
- dfhdklas fj;ladsjfa fadslj
-    fdsa;
- fjasd;fl
-    we;j
-    Бреда
-    аывфжлоад
+
+
     return (
         <div className={inputGroup}>
             <ul className="list-group">
