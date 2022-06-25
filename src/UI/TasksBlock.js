@@ -40,7 +40,6 @@ let TasksBlock = (props) => {
         document.getElementById('xd').value = ''
 }
 
-
     return (
         <div className={inputGroup}>
             <ul className="list-group">
@@ -58,4 +57,5 @@ let TasksBlock = (props) => {
 }
 
 export default TasksBlock
+
 

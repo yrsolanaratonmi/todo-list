@@ -10,7 +10,7 @@ function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        TODO LIST
+        TODO LIST made by roma baranik
           <TasksBlock info = {props.info} render = {props.render}/>
       </header>
 
